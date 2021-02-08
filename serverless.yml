@@ -1,0 +1,25 @@
+service: plugin-test
+
+plugins:
+  - serverless-apigw-ws-binary
+
+provider:
+  name: aws
+  runtime: 'nodejs12.x'
+  versionFunctions: false
+  apiGateway:
+    shouldStartNameWithService: true
+  websocketsApiName: test_ws
+  websocketsApiRouteSelectionExpression: $request.body.action
+
+functions:
+  test_websockets:
+    handler: src/handler/handler
+    description: testing the sls plugin
+    events:
+      - websocket:
+          route: $default
+      - websocket:
+          route: $connect
+      - websocket:
+          route: $disconnect
