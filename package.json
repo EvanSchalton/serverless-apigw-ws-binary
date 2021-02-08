@@ -1,0 +1,37 @@
+{
+    "name": "serverless-apigw-ws-binary",
+    "version": "0.0.1",
+    "description": "Adds contenting handling to websockets.",
+    "main": "index.js",
+    "scripts": {
+      "test": "none"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/maciejtreder/serverless-apigw-binary.git"
+    },
+    "keywords": [
+      "serverless",
+      "serverless-plugin",
+      "amazon",
+      "binary",
+      "types",
+      "support",
+      "gateway",
+      "aws",
+      "lambda",
+      "websocket"
+    ],
+    "author": "Evan Schalton <Evan.Schalton@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/EvanSchalton/serverless-apigw-ws-binary/issues"
+    },
+    "homepage": "https://github.com/EvanSchalton/serverless-apigw-ws-binary",
+    "engines": {
+      "node": ">=4.0"
+    },
+    "devDependencies": {
+      "serverless": "^1.26.1"
+    }
+  }
